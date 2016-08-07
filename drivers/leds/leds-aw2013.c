@@ -652,7 +652,7 @@ static int aw2013_led_probe(struct i2c_client *client,
 
 	ret = aw2013_power_init(led_array, true);
 	if (ret) {
-	dev_err(&client->, "power init failed");
+	dev_err(&client->dev, "power init failed");
         goto fail_parsed_node;
 	}
 
